@@ -11,8 +11,7 @@ module my_chip (
     // TODO: remove the counter design and use this module to insert your own design
     // DO NOT change the I/O header of this design
 
-    RangeFinder u_RangeFinder 
-        #(.WIDTH(8)) (
+    RangeFinder #(.WIDTH(8)) u_RangeFinder (
         .data_in(io_in[7:0]),
         .clock(clock), 
         .reset(reset),
